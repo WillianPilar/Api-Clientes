@@ -30,6 +30,17 @@ public class ClientesService {
 		return clientesRepository.findById(id);
 	}
 
+	public void deleteById(int id) {
+		
+		clientesRepository.deleteById(id);
+		
+	}
+
+	public void updateCliente(Clientes updateCliente) {
+		
+		clientesRepository.save(updateCliente);
+	}
+
 	
 
 }

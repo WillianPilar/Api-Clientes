@@ -28,7 +28,7 @@ public class Clientes {
 	@Column(nullable = false, length = 11)
 	public String cpf;
 	
-	@Column(name = "data_cadastro")
+	@Column(name = "data_cadastro", updatable = false)
 	@JsonFormat(pattern = "dd/MM/yyyy")//Formatar o JSON de data que receber para o formato passado no pattern
 	public LocalDate dataCadastro;
 	
