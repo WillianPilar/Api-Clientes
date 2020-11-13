@@ -1,12 +1,8 @@
 package com.example.Clientes.ApiClientes.Model;
 
 import java.time.LocalDate;
-
-
 import javax.persistence.*;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
-
 import lombok.*;
 
 
@@ -22,6 +18,7 @@ public class Clientes {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public Integer id;
 	
+
 	@Column(nullable = false, length = 100) //Para criar coluna no BD e passar as definições
 	public String nome;
 	
