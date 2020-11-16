@@ -2,6 +2,8 @@ package com.example.Clientes.ApiClientes.Model;
 
 import java.time.LocalDate;
 import javax.persistence.*;
+
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 
